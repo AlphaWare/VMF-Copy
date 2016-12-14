@@ -1,4 +1,3 @@
-#Comment! :D
 #Default engine & editor materials:
 toolsinvisible
 toolsnodraw
