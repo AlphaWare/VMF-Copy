@@ -1,0 +1,6 @@
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csprojResolveAssemblyReference.cache
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe.config
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.pdb
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.exe
+c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.pdb
