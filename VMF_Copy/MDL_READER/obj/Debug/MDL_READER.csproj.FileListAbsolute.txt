@@ -1,6 +1,0 @@
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\bin\Debug\MDL_READER.exe.config
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\bin\Debug\MDL_READER.exe
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\bin\Debug\MDL_READER.pdb
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\obj\Debug\MDL_READER.csprojResolveAssemblyReference.cache
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\obj\Debug\MDL_READER.exe
-C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\MDL_READER\obj\Debug\MDL_READER.pdb
