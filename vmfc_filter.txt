@@ -116,3 +116,22 @@ VMT:reflectivity_80b
 VMT:reflectivity_90
 VMT:reflectivity_90b
 VMT:twenty
+
+# -- Engine Models
+MDL:error
+
+# -- Hammer Models
+MDL:air_node
+MDL:air_node_hint
+MDL:axis_helper
+MDL:axis_helper_thick
+MDL:camera
+MDL:climb_node
+MDL:cone_helper
+MDL:ground_node
+MDL:node_hint
+MDL:overlay_helper
+MDL:playerstart
+MDL:scriptedsequence
+MDL:spot
+MDL:spot_cone
