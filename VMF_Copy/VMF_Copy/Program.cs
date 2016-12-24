@@ -1071,44 +1071,59 @@ namespace VMF_Copy
             MDL_PATTAREN.Read();
             foreach(string mdl in CONTENT_COLLECTION.GetModels())
             {
-                FileStream MDL = new FileStream(gamepath +"\\" + mdl, FileMode.Open, FileAccess.Read);
-                byte[] data = new byte[MDL.Length];
-                MDL.Read(data, 0, System.Convert.ToInt32(MDL.Length));
-                MDL.Close();
-                string HEX = BitConverter.ToString(data).Replace('-',' ');
-                if (debug)
-                    new FORM_MDL_HEX(data).ShowDialog();
-                foreach(string pat in MDL_PATTAREN.PATTAREN)
+                try
                 {
-
-                    if(HEX.Contains(pat))
+                   if(File.Exists(gamepath + "\\" + mdl))
                     {
-                        string[] sp = { pat };
-                        string fixedhex = HEX.Split(sp, StringSplitOptions.None)[1];
-
-                        if (HexToString(fixedhex) != "?")
+                        FileStream MDL = new FileStream(gamepath + "\\" + mdl, FileMode.Open, FileAccess.Read);
+                        byte[] data = new byte[MDL.Length];
+                        MDL.Read(data, 0, System.Convert.ToInt32(MDL.Length));
+                        MDL.Close();
+                        string HEX = BitConverter.ToString(data).Replace('-', ' ');
+                        if (debug)
+                            new FORM_MDL_HEX(data).ShowDialog();
+                        foreach (string pat in MDL_PATTAREN.PATTAREN)
                         {
-                            if(HexToString(fixedhex).Contains('\\'))
+
+                            if (HEX.Contains(pat))
                             {
-                                if (!HexToString(fixedhex).Contains(".mdl"))
+                                string[] sp = { pat };
+                                string fixedhex = HEX.Split(sp, StringSplitOptions.None)[1];
+
+                                if (HexToString(fixedhex) != "?")
                                 {
-                                    string MatDirectory = HexToString(fixedhex).Split(' ')[HexToString(fixedhex).Split(' ').Count() - 1];
-                                    string[] Mats = HexToString(fixedhex).Split(' ');
-                                    foreach (string mat in Mats)
+                                    if (HexToString(fixedhex).Contains('\\'))
                                     {
-                                        if (mat != MatDirectory)
+                                        if (!HexToString(fixedhex).Contains(".mdl"))
                                         {
-                                            CONTENT_COLLECTION.AddMaterial("materials\\" + MatDirectory + mat + ".vmt");
+                                            string MatDirectory = HexToString(fixedhex).Split(' ')[HexToString(fixedhex).Split(' ').Count() - 1];
+                                            string[] Mats = HexToString(fixedhex).Split(' ');
+                                            foreach (string mat in Mats)
+                                            {
+                                                if (mat != MatDirectory)
+                                                {
+                                                    CONTENT_COLLECTION.AddMaterial("materials\\" + MatDirectory + mat + ".vmt");
+                                                }
+                                            }
+                                            break;
                                         }
+
                                     }
-                                    break;
+
                                 }
-
                             }
-
                         }
                     }
+                   else
+                    {
+                        Console.WriteLine(mdl+" does not exist!");
+                    }
                 }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Exception on MDL_READER! ("+ex.Message+")");
+                }
+                
             }
             return "";
         }
