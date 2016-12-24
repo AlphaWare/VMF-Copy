@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34AD7052-051F-4CD9-A570-BFE283FE170B}</ProjectGuid>
+    <ProjectGuid>{9169B36A-8467-4E94-B893-36FC534D45F3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VMF_Copy</RootNamespace>
-    <AssemblyName>vmfcopy</AssemblyName>
+    <RootNamespace>MDL_READER</RootNamespace>
+    <AssemblyName>MDL_READER</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,17 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Iron-Devil-Treasures-Duck.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastColoredTextBox">
-      <HintPath>..\..\..\..\..\Desktop\FastColoredTextBox.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,60 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FORM_MAIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_MAIN.Designer.cs">
-      <DependentUpon>FORM_MAIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_MDL_HEX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_MDL_HEX.Designer.cs">
-      <DependentUpon>FORM_MDL_HEX.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Iron-Devil-Treasures-Duck.ico" />
-    <None Include="Resources\Teapot-16 %281%29.png" />
-    <None Include="Resources\Folder-16.png" />
-    <None Include="Resources\Material.png" />
-    <None Include="Resources\Delete Filled-16 %281%29.png" />
-    <None Include="Resources\Add Database-16.png" />
-    <None Include="Resources\Right-16.png" />
-    <None Include="Resources\Search-16.png" />
-    <None Include="Resources\Search-20.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FORM_MAIN.resx">
-      <DependentUpon>FORM_MAIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_MDL_HEX.resx">
-      <DependentUpon>FORM_MDL_HEX.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

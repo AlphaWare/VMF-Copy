@@ -4,3 +4,14 @@ c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\bin\Debug
 c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.pdb
 c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.exe
 c:\users\ar255\documents\visual studio 2015\Projects\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.pdb
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe.config
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.exe
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.pdb
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.pdb
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csprojResolveAssemblyReference.cache
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.FORM_MAIN.resources
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csproj.GenerateResource.Cache
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\FastColoredTextBox.dll
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.FORM_MDL_HEX.resources
+C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.Properties.Resources.resources

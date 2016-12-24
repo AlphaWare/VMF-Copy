@@ -1,0 +1,7 @@
+VMF Copy v0.4
+Filter:
+toolsinvisible
+toolsnodraw
+toolstrigger
+dev_measurewall01a
+
