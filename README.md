@@ -1,6 +1,6 @@
 # VMF-Copy
-Read materials in a Hammer .vmf file and copy the material file and texture file from the game's directory or a custom folder and copy them into another folder, such as a GMod Workshop addon.
-
-If it's possible, support for sounds and models should be added.
-
+Reads VMF file and copies all the content that the map will require to a desired folder or can be used with BspZip.
 This would make working with custom content alot easier to release.
+
+Currently copies models, materials, textures and sounds
+Support for color correction and particles will be added in the next update
