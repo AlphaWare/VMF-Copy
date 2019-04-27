@@ -34,6 +34,8 @@ namespace VMF_Copy
         private void b_start_Click(object sender, EventArgs e)
         {
             //Check if everything exists
+            LoadSources();
+
             if(!File.Exists(tb_vmf.Text))
             {
                 MessageBox.Show("Invalid Path for VMF", "Invalid Path", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -253,29 +255,45 @@ namespace VMF_Copy
                 else
                     Usebspzip(Assets.ToArray());
 
-                this.Invoke(new MethodInvoker(delegate () { Log("Missing Models: "); }));
-                foreach (string MISSING in sear.MISSING_MODELS)
+                if(sear.MISSING_MODELS.Count !=0)
                 {
-                    this.Invoke(new MethodInvoker(delegate () { Log(" "+ MISSING); }));
+                    this.Invoke(new MethodInvoker(delegate () { Log("Missing Models: "); }));
+                    foreach (string MISSING in sear.MISSING_MODELS)
+                    {
+                        this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    }
                 }
 
-                this.Invoke(new MethodInvoker(delegate () { Log("Missing Materials: "); }));
-                foreach (string MISSING in sear.MISSING_MATERIALS)
+                if(sear.MISSING_MATERIALS.Count != 0)
                 {
-                    this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    this.Invoke(new MethodInvoker(delegate () { Log("Missing Materials: "); }));
+                    foreach (string MISSING in sear.MISSING_MATERIALS)
+                    {
+                        this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    }
+
                 }
 
-                this.Invoke(new MethodInvoker(delegate () { Log("Missing Textures: "); }));
-                foreach (string MISSING in sear.MISSING_TEXTURES)
+                if (sear.MISSING_TEXTURES.Count != 0)
                 {
-                    this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    this.Invoke(new MethodInvoker(delegate () { Log("Missing Textures: "); }));
+                    foreach (string MISSING in sear.MISSING_TEXTURES)
+                    {
+                        this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    }
                 }
 
-                this.Invoke(new MethodInvoker(delegate () { Log("Missing Sounds: "); }));
-                foreach (string MISSING in sear.MISSING_SOUNDS)
+                if (sear.MISSING_SOUNDS.Count != 0)
                 {
-                    this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    this.Invoke(new MethodInvoker(delegate () { Log("Missing Sounds: "); }));
+                    foreach (string MISSING in sear.MISSING_SOUNDS)
+                    {
+                        this.Invoke(new MethodInvoker(delegate () { Log(" " + MISSING); }));
+                    }
                 }
+
+                this.Invoke(new MethodInvoker(delegate () { Log("------------------------------------------------"); }));
+                this.Invoke(new MethodInvoker(delegate () { Log("Done."); }));
 
             });
             mThread.Start();
@@ -403,7 +421,14 @@ namespace VMF_Copy
 
         private void wfMain_Load(object sender, EventArgs e)
         {
-            if(File.Exists(SOURCES_FILE_PATH))
+            LoadSources();
+        }
+
+        private void LoadSources()
+        {
+            srcDirs = new List<string>();
+            lb_gameFolders.Items.Clear();
+            if (File.Exists(SOURCES_FILE_PATH))
             {
                 var SOURCES = new StreamReader(SOURCES_FILE_PATH);
                 string l;
@@ -416,13 +441,18 @@ namespace VMF_Copy
             }
         }
 
-        private void wfMain_FormClosing(object sender, FormClosingEventArgs e)
+        private void SaveSources()
         {
             Properties.Settings.Default.Save();
             var SOURCES = new StreamWriter(SOURCES_FILE_PATH);
             foreach (var item in lb_gameFolders.Items)
                 SOURCES.WriteLine(item.ToString());
             SOURCES.Close();
+        }
+
+        private void wfMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
 
         }
 
@@ -845,11 +875,6 @@ camera.vvd");
             }
         }
 
-        public void createBspZipList()
-        {
-
-        }
-
         private void b_browse_vmf_Click(object sender, EventArgs e)
         {
             using (var Diag = new OpenFileDialog())
@@ -867,6 +892,7 @@ camera.vvd");
                 if (Diag.ShowDialog() == DialogResult.OK)
                 {
                     lb_gameFolders.Items.Add(Diag.SelectedPath);
+                    SaveSources();
                 }
             }
         }
@@ -908,12 +934,14 @@ camera.vvd");
 
         private void b_openInExpolorer_vmf_Click(object sender, EventArgs e)
         {
-            Process.Start(Path.GetDirectoryName(tb_vmf.Text));
+            if(File.Exists(tb_vmf.Text))
+                Process.Start(Path.GetDirectoryName(tb_vmf.Text));
         }
 
         private void b_openInExpolorer_Output_Click(object sender, EventArgs e)
         {
-            Process.Start(tb_output.Text);
+            if (!Directory.Exists(tb_output.Text))
+                Process.Start(tb_output.Text);
         }
 
         private void b_openInExpolorer_selectedSource_Click(object sender, EventArgs e)
@@ -924,12 +952,14 @@ camera.vvd");
 
         private void b_openInExplorer_bspzip_Click(object sender, EventArgs e)
         {
-            Process.Start(Path.GetDirectoryName(tb_bspzipPath.Text));
+            if (!File.Exists(tb_bspzipPath.Text))
+                Process.Start(Path.GetDirectoryName(tb_bspzipPath.Text));
         }
 
         private void b_openInExpolorer_bsp_Click(object sender, EventArgs e)
         {
-            Process.Start(Path.GetDirectoryName(tb_bspPath.Text));
+            if (!File.Exists(tb_bspPath.Text))
+                Process.Start(Path.GetDirectoryName(tb_bspPath.Text));
         }
 
         private void lb_gameFolders_MouseDoubleClick(object sender, MouseEventArgs e)

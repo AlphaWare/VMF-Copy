@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wfMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.b_openInExplorer_bspzip = new System.Windows.Forms.Button();
             this.b_openInExpolorer_bsp = new System.Windows.Forms.Button();
             this.b_browse_bsp = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -85,7 +86,6 @@
             this.cb_cSounds = new System.Windows.Forms.CheckBox();
             this.cb_cModels = new System.Windows.Forms.CheckBox();
             this.tp_ = new System.Windows.Forms.ToolTip(this.components);
-            this.b_openInExplorer_bspzip = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -126,6 +126,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paths";
             // 
+            // b_openInExplorer_bspzip
+            // 
+            this.b_openInExplorer_bspzip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.b_openInExplorer_bspzip.Location = new System.Drawing.Point(852, 125);
+            this.b_openInExplorer_bspzip.Name = "b_openInExplorer_bspzip";
+            this.b_openInExplorer_bspzip.Size = new System.Drawing.Size(25, 23);
+            this.b_openInExplorer_bspzip.TabIndex = 23;
+            this.b_openInExplorer_bspzip.Text = "⬆";
+            this.tp_.SetToolTip(this.b_openInExplorer_bspzip, "Open in explorer");
+            this.b_openInExplorer_bspzip.UseVisualStyleBackColor = true;
+            this.b_openInExplorer_bspzip.Click += new System.EventHandler(this.b_openInExplorer_bspzip_Click);
+            // 
             // b_openInExpolorer_bsp
             // 
             this.b_openInExpolorer_bsp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -134,6 +146,7 @@
             this.b_openInExpolorer_bsp.Size = new System.Drawing.Size(25, 23);
             this.b_openInExpolorer_bsp.TabIndex = 22;
             this.b_openInExpolorer_bsp.Text = "⬆";
+            this.tp_.SetToolTip(this.b_openInExpolorer_bsp, "Open in explorer");
             this.b_openInExpolorer_bsp.UseVisualStyleBackColor = true;
             this.b_openInExpolorer_bsp.Click += new System.EventHandler(this.b_openInExpolorer_bsp_Click);
             // 
@@ -207,6 +220,7 @@
             this.b_openInExpolorer_selectedSource.Size = new System.Drawing.Size(25, 23);
             this.b_openInExpolorer_selectedSource.TabIndex = 15;
             this.b_openInExpolorer_selectedSource.Text = "⬆";
+            this.tp_.SetToolTip(this.b_openInExpolorer_selectedSource, "Open in explorer");
             this.b_openInExpolorer_selectedSource.UseVisualStyleBackColor = true;
             this.b_openInExpolorer_selectedSource.Click += new System.EventHandler(this.b_openInExpolorer_selectedSource_Click);
             // 
@@ -218,6 +232,7 @@
             this.b_openInExpolorer_Output.Size = new System.Drawing.Size(25, 23);
             this.b_openInExpolorer_Output.TabIndex = 14;
             this.b_openInExpolorer_Output.Text = "⬆";
+            this.tp_.SetToolTip(this.b_openInExpolorer_Output, "Open in explorer");
             this.b_openInExpolorer_Output.UseVisualStyleBackColor = true;
             this.b_openInExpolorer_Output.Click += new System.EventHandler(this.b_openInExpolorer_Output_Click);
             // 
@@ -229,6 +244,7 @@
             this.b_openInExpolorer_vmf.Size = new System.Drawing.Size(25, 23);
             this.b_openInExpolorer_vmf.TabIndex = 13;
             this.b_openInExpolorer_vmf.Text = "⬆";
+            this.tp_.SetToolTip(this.b_openInExpolorer_vmf, "Open in explorer");
             this.b_openInExpolorer_vmf.UseVisualStyleBackColor = true;
             this.b_openInExpolorer_vmf.Click += new System.EventHandler(this.b_openInExpolorer_vmf_Click);
             // 
@@ -775,17 +791,6 @@
             // 
             this.tp_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.tp_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            // 
-            // b_openInExplorer_bspzip
-            // 
-            this.b_openInExplorer_bspzip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.b_openInExplorer_bspzip.Location = new System.Drawing.Point(852, 125);
-            this.b_openInExplorer_bspzip.Name = "b_openInExplorer_bspzip";
-            this.b_openInExplorer_bspzip.Size = new System.Drawing.Size(25, 23);
-            this.b_openInExplorer_bspzip.TabIndex = 23;
-            this.b_openInExplorer_bspzip.Text = "⬆";
-            this.b_openInExplorer_bspzip.UseVisualStyleBackColor = true;
-            this.b_openInExplorer_bspzip.Click += new System.EventHandler(this.b_openInExplorer_bspzip_Click);
             // 
             // wfMain
             // 

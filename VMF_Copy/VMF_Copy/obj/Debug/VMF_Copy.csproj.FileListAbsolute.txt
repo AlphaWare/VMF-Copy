@@ -15,3 +15,16 @@ C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.cs
 C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\FastColoredTextBox.dll
 C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.FORM_MDL_HEX.resources
 C:\Users\ar255\Documents\GitHub\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.Properties.Resources.resources
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe.config
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.exe
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\vmfcopy.pdb
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\SEAReader.dll
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\bin\Debug\SEAReader.pdb
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csprojAssemblyReference.cache
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.Properties.Resources.resources
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.wfMain.resources
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csproj.GenerateResource.cache
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csproj.CoreCompileInputs.cache
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\VMF_Copy.csproj.CopyComplete
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.exe
+D:\Repository\VMF-Copy\VMF_Copy\VMF_Copy\obj\Debug\vmfcopy.pdb

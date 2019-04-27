@@ -1,0 +1,5 @@
+D:\Repository\VMF-Copy\VMF_Copy\SEAReader\bin\Debug\SEAReader.dll
+D:\Repository\VMF-Copy\VMF_Copy\SEAReader\bin\Debug\SEAReader.pdb
+D:\Repository\VMF-Copy\VMF_Copy\SEAReader\obj\Debug\SEAReader.csproj.CoreCompileInputs.cache
+D:\Repository\VMF-Copy\VMF_Copy\SEAReader\obj\Debug\SEAReader.dll
+D:\Repository\VMF-Copy\VMF_Copy\SEAReader\obj\Debug\SEAReader.pdb
