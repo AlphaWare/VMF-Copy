@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMF_Copy", "VMF_Copy\VMF_Copy.csproj", "{34AD7052-051F-4CD9-A570-BFE283FE170B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6FB5BCD-16B7-4993-9C96-C81461690EBF} = {B6FB5BCD-16B7-4993-9C96-C81461690EBF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDL_READER", "MDL_READER\MDL_READER.csproj", "{9169B36A-8467-4E94-B893-36FC534D45F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEAReader", "SEAReader\SEAReader.csproj", "{B6FB5BCD-16B7-4993-9C96-C81461690EBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +26,15 @@ Global
 		{9169B36A-8467-4E94-B893-36FC534D45F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9169B36A-8467-4E94-B893-36FC534D45F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9169B36A-8467-4E94-B893-36FC534D45F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FB5BCD-16B7-4993-9C96-C81461690EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FB5BCD-16B7-4993-9C96-C81461690EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FB5BCD-16B7-4993-9C96-C81461690EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FB5BCD-16B7-4993-9C96-C81461690EBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F702802F-0D8D-4813-9B52-C0AF3B8F559D}
 	EndGlobalSection
 EndGlobal

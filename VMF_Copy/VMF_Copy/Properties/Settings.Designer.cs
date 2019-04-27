@@ -12,7 +12,7 @@ namespace VMF_Copy.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,169 +25,37 @@ namespace VMF_Copy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Point test {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OUTPUT_FOLDER {
             get {
-                return ((global::System.Drawing.Point)(this["test"]));
+                return ((string)(this["OUTPUT_FOLDER"]));
             }
             set {
-                this["test"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CB_VMF")]
-        public string vmfs {
-            get {
-                return ((string)(this["vmfs"]));
-            }
-            set {
-                this["vmfs"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cMat {
-            get {
-                return ((bool)(this["cMat"]));
-            }
-            set {
-                this["cMat"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cTex {
-            get {
-                return ((bool)(this["cTex"]));
-            }
-            set {
-                this["cTex"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cSou {
-            get {
-                return ((bool)(this["cSou"]));
-            }
-            set {
-                this["cSou"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cPar {
-            get {
-                return ((bool)(this["cPar"]));
-            }
-            set {
-                this["cPar"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cCC {
-            get {
-                return ((bool)(this["cCC"]));
-            }
-            set {
-                this["cCC"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool cMDL {
-            get {
-                return ((bool)(this["cMDL"]));
-            }
-            set {
-                this["cMDL"] = value;
+                this["OUTPUT_FOLDER"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string vmf_path {
+        public string VMF_LOCATION {
             get {
-                return ((string)(this["vmf_path"]));
+                return ((string)(this["VMF_LOCATION"]));
             }
             set {
-                this["vmf_path"] = value;
+                this["VMF_LOCATION"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string game_directory {
+        public string SOURCE_FOLDER {
             get {
-                return ((string)(this["game_directory"]));
+                return ((string)(this["SOURCE_FOLDER"]));
             }
             set {
-                this["game_directory"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string copy_to_folder {
-            get {
-                return ((string)(this["copy_to_folder"]));
-            }
-            set {
-                this["copy_to_folder"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string vmfPath {
-            get {
-                return ((string)(this["vmfPath"]));
-            }
-            set {
-                this["vmfPath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string GameFolder {
-            get {
-                return ((string)(this["GameFolder"]));
-            }
-            set {
-                this["GameFolder"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string CopyToFolder {
-            get {
-                return ((string)(this["CopyToFolder"]));
-            }
-            set {
-                this["CopyToFolder"] = value;
+                this["SOURCE_FOLDER"] = value;
             }
         }
         
@@ -217,13 +85,265 @@ namespace VMF_Copy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cOR {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool C_MODELS {
             get {
-                return ((bool)(this["cOR"]));
+                return ((bool)(this["C_MODELS"]));
             }
             set {
-                this["cOR"] = value;
+                this["C_MODELS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool C_MATERIALS {
+            get {
+                return ((bool)(this["C_MATERIALS"]));
+            }
+            set {
+                this["C_MATERIALS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool C_TEXTURES {
+            get {
+                return ((bool)(this["C_TEXTURES"]));
+            }
+            set {
+                this["C_TEXTURES"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_SOUNDS {
+            get {
+                return ((bool)(this["C_SOUNDS"]));
+            }
+            set {
+                this["C_SOUNDS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_PARTICLES {
+            get {
+                return ((bool)(this["C_PARTICLES"]));
+            }
+            set {
+                this["C_PARTICLES"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_COLOR_CORRECTIONS {
+            get {
+                return ((bool)(this["C_COLOR_CORRECTIONS"]));
+            }
+            set {
+                this["C_COLOR_CORRECTIONS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool REPLACE {
+            get {
+                return ((bool)(this["REPLACE"]));
+            }
+            set {
+                this["REPLACE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool FILTER {
+            get {
+                return ((bool)(this["FILTER"]));
+            }
+            set {
+                this["FILTER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_BSPZIP {
+            get {
+                return ((bool)(this["C_BSPZIP"]));
+            }
+            set {
+                this["C_BSPZIP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_EXTRACT_BSPZIP {
+            get {
+                return ((bool)(this["C_EXTRACT_BSPZIP"]));
+            }
+            set {
+                this["C_EXTRACT_BSPZIP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_DELETE_CUBEMAPS {
+            get {
+                return ((bool)(this["C_DELETE_CUBEMAPS"]));
+            }
+            set {
+                this["C_DELETE_CUBEMAPS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_EXTRACT_CUBEMAPS {
+            get {
+                return ((bool)(this["C_EXTRACT_CUBEMAPS"]));
+            }
+            set {
+                this["C_EXTRACT_CUBEMAPS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_COMPRESS {
+            get {
+                return ((bool)(this["C_COMPRESS"]));
+            }
+            set {
+                this["C_COMPRESS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_UNCOMPRESS {
+            get {
+                return ((bool)(this["C_UNCOMPRESS"]));
+            }
+            set {
+                this["C_UNCOMPRESS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BSPZIP_PATH {
+            get {
+                return ((string)(this["BSPZIP_PATH"]));
+            }
+            set {
+                this["BSPZIP_PATH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BSP_PATH {
+            get {
+                return ((string)(this["BSP_PATH"]));
+            }
+            set {
+                this["BSP_PATH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_SW {
+            get {
+                return ((bool)(this["C_SW"]));
+            }
+            set {
+                this["C_SW"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_DX8 {
+            get {
+                return ((bool)(this["C_DX8"]));
+            }
+            set {
+                this["C_DX8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_DX9 {
+            get {
+                return ((bool)(this["C_DX9"]));
+            }
+            set {
+                this["C_DX9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_PHY {
+            get {
+                return ((bool)(this["C_PHY"]));
+            }
+            set {
+                this["C_PHY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_ANI {
+            get {
+                return ((bool)(this["C_ANI"]));
+            }
+            set {
+                this["C_ANI"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool C_VVD {
+            get {
+                return ((bool)(this["C_VVD"]));
+            }
+            set {
+                this["C_VVD"] = value;
             }
         }
     }

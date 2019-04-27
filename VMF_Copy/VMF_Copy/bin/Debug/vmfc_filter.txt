@@ -1,6 +1,0 @@
-#Comment! :D
-#Default engine & editor materials:
-toolsinvisible
-toolsnodraw
-toolstrigger
-dev_measurewall01a

@@ -1,0 +1,31 @@
+"GameInfo"
+{
+	game	"SEAE"
+	title	""
+	title2	""
+	type	singleplayer_only
+
+	"developer" 		"Alexander Rosse (AlphaWare181)"
+	"developer_url"		""
+	"manual"			""
+
+	"GameData"		"base.fgd"
+
+	FileSystem
+	{
+		SteamAppId				4000
+		ToolsAppId				211
+
+		SearchPaths
+		{
+			game+mod			|gameinfo_path|/addons/*
+			game				|gameinfo_path|
+			platform			|gameinfo_path|
+			mod+mod_write+default_write_path		|gameinfo_path|
+			game+game_write		|gameinfo_path|
+			gamebin				|gameinfo_path|/bin
+			game+download		|gameinfo_path|/download
+		}
+
+	}
+}

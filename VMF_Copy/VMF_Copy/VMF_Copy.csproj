@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VMF_Copy</RootNamespace>
     <AssemblyName>vmfcopy</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,11 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Iron-Devil-Treasures-Duck.ico</ApplicationIcon>
+    <ApplicationIcon>vmfc_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastColoredTextBox">
-      <HintPath>..\..\..\..\..\Desktop\FastColoredTextBox.dll</HintPath>
+    <Reference Include="SEAReader">
+      <HintPath>..\SEAReader\bin\Debug\SEAReader.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,18 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FORM_MAIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_MAIN.Designer.cs">
-      <DependentUpon>FORM_MAIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_MDL_HEX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_MDL_HEX.Designer.cs">
-      <DependentUpon>FORM_MDL_HEX.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -75,6 +64,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="wfMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfMain.Designer.cs">
+      <DependentUpon>wfMain.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,27 +79,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Iron-Devil-Treasures-Duck.ico" />
-    <None Include="Resources\Teapot-16 %281%29.png" />
-    <None Include="Resources\Folder-16.png" />
-    <None Include="Resources\Material.png" />
-    <None Include="Resources\Delete Filled-16 %281%29.png" />
-    <None Include="Resources\Add Database-16.png" />
-    <None Include="Resources\Right-16.png" />
-    <None Include="Resources\Search-16.png" />
-    <None Include="Resources\Search-20.png" />
+    <Content Include="defres\res\gameinfo.txt" />
+    <Content Include="defres\vmfc_filter.txt" />
+    <Content Include="vmfc_icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FORM_MAIN.resx">
-      <DependentUpon>FORM_MAIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_MDL_HEX.resx">
-      <DependentUpon>FORM_MDL_HEX.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="wfMain.resx">
+      <DependentUpon>wfMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
